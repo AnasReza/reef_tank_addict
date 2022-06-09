@@ -17,7 +17,7 @@ class RegisterState extends State<Register> {
         child: Scaffold(
       body: Container(
           width: double.infinity,
-          padding: EdgeInsets.only(left: 20, right: 20),
+          padding: const EdgeInsets.only(left: 20, right: 20),
           decoration: const BoxDecoration(
               image: DecorationImage(
                   image: AssetImage("assets/png/background.jpeg"),
@@ -33,18 +33,18 @@ class RegisterState extends State<Register> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       'Email',
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
                           fontWeight: FontWeight.w600),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Container(
-                      padding: EdgeInsets.only(left: 10, right: 10),
+                      padding: const EdgeInsets.only(left: 10, right: 10),
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(5)),
@@ -58,21 +58,21 @@ class RegisterState extends State<Register> {
                                 fontWeight: FontWeight.w500)),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
-                    Text(
+                    const Text(
                       'Password',
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: Colors.white,
                           fontSize: 18,
                           fontWeight: FontWeight.w600),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Container(
-                      padding: EdgeInsets.only(left: 10, right: 10),
+                      padding: const EdgeInsets.only(left: 10, right: 10),
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(5)),
@@ -87,21 +87,21 @@ class RegisterState extends State<Register> {
                                 fontWeight: FontWeight.w500)),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
-                    Text(
+                    const Text(
                       'Full Name',
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: Colors.white,
                           fontSize: 18,
                           fontWeight: FontWeight.w600),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Container(
-                      padding: EdgeInsets.only(left: 10, right: 10),
+                      padding: const EdgeInsets.only(left: 10, right: 10),
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(5)),
@@ -116,11 +116,11 @@ class RegisterState extends State<Register> {
                                 fontWeight: FontWeight.w500)),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     Container(
-                        padding: EdgeInsets.only(top: 10, bottom: 10),
+                        padding: const EdgeInsets.only(top: 10, bottom: 10),
                         width: double.infinity,
                         decoration: BoxDecoration(
                             color: Constant.orangeColor,
@@ -134,11 +134,11 @@ class RegisterState extends State<Register> {
                           ),
                           textAlign: TextAlign.center,
                         )),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
 
-                    InkWell(child: Container(
+                    InkWell(child: SizedBox(
                       width: double.infinity,
                       child: Text(
                         'ALREADY HAVE AN ACCOUNT?',
