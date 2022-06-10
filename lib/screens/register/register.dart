@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:reef_tank_addict/common/constant.dart';
+import 'package:reef_tank_addict/screens/main_screen/main_screen.dart';
 
 import '../login/login.dart';
 
@@ -119,7 +120,7 @@ class RegisterState extends State<Register> {
                     const SizedBox(
                       height: 30,
                     ),
-                    Container(
+                    InkWell(child: Container(
                         padding: const EdgeInsets.only(top: 10, bottom: 10),
                         width: double.infinity,
                         decoration: BoxDecoration(
@@ -128,12 +129,15 @@ class RegisterState extends State<Register> {
                         child: const Text(
                           'SIGNUP',
                           style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontWeight: FontWeight.w500,letterSpacing: 1.5
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w500,letterSpacing: 1.5
                           ),
                           textAlign: TextAlign.center,
-                        )),
+                        )),onTap: (){
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (builder)=>MainScreen()));
+                    },),
+
                     const SizedBox(
                       height: 30,
                     ),
