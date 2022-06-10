@@ -17,7 +17,7 @@ class SplashScreenState extends State<SplashScreen> {
 
   void startTimer() {
     _timer = Timer.periodic(
-      const Duration(seconds: 5),
+      const Duration(seconds: 1),
       (Timer timer) {
         if (_start == 0) {
           Navigator.pushReplacement(
